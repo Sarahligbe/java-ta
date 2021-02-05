@@ -8,6 +8,13 @@ public class Solution {
     public static boolean getresult(String str)
     {
       // your code goes here
+        int lengthOfString = str.length();
+
+        for (int i=0; i<lengthOfString; i++){
+            if (str.charAt(i) != str.charAt(lengthOfString-1-i))
+                return false;
+        }
+        return true;
 
     }
 
